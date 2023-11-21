@@ -1,0 +1,22 @@
+{
+  "name": "cypressautomationmounika",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mounika9895/Cypress_2023_-24.git"
+  },
+  "author": "Mounika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mounika9895/Cypress_2023_-24/issues"
+  },
+  "homepage": "https://github.com/Mounika9895/Cypress_2023_-24#readme",
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  }
+}
