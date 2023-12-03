@@ -6,7 +6,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('input[placeholder="Password"]').type('Pass1234');
   cy.get('button[type="button"]').click();
   cy.get(':nth-child(4) > :nth-child(4) > a > span').click();
-  cy.get(':nth-child(1) > .SUBCRP-list-box > .SUBCRP-innr-area > .SUBCRP-list-actn-area > :nth-child(2) > .SUBCRP-blue-btn').click();
+  cy.get('.SUBCRP-list .ng-star-inserted:nth-of-type(1) .SUBCRP-innr-area .SUBCRP-blue-btn').click();
   cy.get(':nth-child(1) > .SUBCRP-list-box > .SUBCRP-package-detail-row > .SUBCRP-package-detail-btn-row > .SUBCRP-blue-btn').click();
   cy.get('.payment-btn').click();
   cy.get('.SUBCRP-cart-edit-icon-btn > img').click();
@@ -14,7 +14,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   for (let i = 0; i < 500; i++) {
   cy.get('input[placeholder="First Name"]:first-of-type').type('Mounika');
   cy.get('input[placeholder="Last Name"]:first-of-type').type('test');
-  
+
   cy.get('')
   }
   });
