@@ -24,7 +24,10 @@ describe('Fill and Submit Form Multiple Times', () => {
          .type('Mounika');
 
        cy.get(':nth-child(1) > :nth-child(3) > .form-group > .form-control').clear()
-       .type('testing')  
+       .type('testing');
+
+       cy.get(':nth-child(1) > :nth-child(4) > .form-group > .phone-box-with-country-code > .form-control').clear()
+       .type('6361415008');
         // // Fill in the first name
         // cy.get('#firstName').type('John');
   
