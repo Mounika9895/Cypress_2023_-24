@@ -27,7 +27,10 @@ describe('Fill and Submit Form Multiple Times', () => {
        .type('testing');
 
        cy.get(':nth-child(1) > :nth-child(4) > .form-group > .phone-box-with-country-code > .form-control').clear()
-       .type('6361415008');
+       .type('9999999999');
+
+       cy.get(':nth-child(5) > .form-group > .form-control').clear()
+       .type('test1234567@gmail.com');
         // // Fill in the first name
         // cy.get('#firstName').type('John');
   
