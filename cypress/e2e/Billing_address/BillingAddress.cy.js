@@ -13,10 +13,10 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('.SUBCRP-cart-edit-icon-btn > img').click();
   
   for (let i = 0; i < 500; i++) {
-  cy.get('input[placeholder="First Name"]:first-of-type').type('Mounika');
-  cy.get('input[placeholder="Last Name"]:first-of-type').type('test');
+    cy.get(':nth-child(1) > :nth-child(2) > .form-group > .form-control').clear();
+  //cy.get('input[placeholder="Last Name"]:first-of-type').clear().type('testing');
 
-  cy.get('')
+  
   }
   });
 
