@@ -3,7 +3,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.visit('https://student.infinitylearn.com/');
   cy.get('.UNFAPP-phncuntry-drpdwn.ng-pristine .UNFAPP-phncuntry-fldgrp').type('6361415008');
   cy.get('.UNFAPP-txt-link.ng-star-inserted').click();
-  cy.get('input[placeholder="Password"]').type('Pass123');
+  cy.get('input[placeholder="Password"]').type('Pass1234');
   cy.get('button[type="button"]').click();
   });
 
