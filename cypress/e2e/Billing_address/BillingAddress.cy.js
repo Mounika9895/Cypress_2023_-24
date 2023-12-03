@@ -12,30 +12,16 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('.payment-btn').click();
   cy.get('.SUBCRP-cart-edit-icon-btn > img').click();
   
-  for (let i = 0; i < 500; i++) {
-    cy.get(':nth-child(1) > :nth-child(2) > .form-group > .form-control').clear();
-  //cy.get('input[placeholder="Last Name"]:first-of-type').clear().type('testing');
-
-  
-  }
+   
+  //cy.get('input[placeholder="Last Name"]:first-of-type').clear().type('testing');});
   });
-
     
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   for (let i = 0; i < 500; i++) {
       it(`should fill and submit form - iteration ${i + 1}`, () => {
        
-      
+       cy.get(':nth-child(1) > :nth-child(2) > .form-group > .form-control').clear()
+         .type('Mounika');
         // // Fill in the first name
         // cy.get('#firstName').type('John');
   
