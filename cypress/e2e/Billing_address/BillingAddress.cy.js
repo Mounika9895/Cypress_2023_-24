@@ -5,7 +5,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('.UNFAPP-txt-link.ng-star-inserted').click();
   cy.get('input[placeholder="Password"]').type('Pass1234');
   cy.get('button[type="button"]').click();
-  cy.get('.UNFAPP-newwdashbrd-lftnav-area .UNFAPP-lftnav:nth-child(4) .ng-star-inserted:nth-of-type(4) span').click();
+  cy.get(':nth-child(4) > :nth-child(4) > a > span').click();
    
   });
 
