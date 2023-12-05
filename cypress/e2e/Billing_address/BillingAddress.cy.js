@@ -9,7 +9,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('button[type="button"]').click();
   cy.get(':nth-child(4) > :nth-child(4) > a > span').click();
   cy.wait(2000)
-  cy.get('.SUBCRP-blue-btn.full').should('contain.text', 'Buy Now')
+  cy.get('.SUBCRP-blue-btn').should('contain.text', 'Buy Now')
   .first().click();
   //cy.get('.SUBCRP-blue-btn').should('have.length', 6).last().click();
   cy.get('.SUBCRP-package-detail-btn-row').click();
