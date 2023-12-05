@@ -19,7 +19,7 @@ describe('Fill and Submit Form Multiple Times', () => {
     
   
   for (let i = 0; i < 500; i++) {
-      it(`should fill and submit form - iteration ${i + 1}`, () => {
+      it.only(`should fill and submit form - iteration ${i + 1}`, () => {
        
        cy.get(':nth-child(1) > :nth-child(2) > .form-group > .form-control').clear()
          .type('Mounika');
