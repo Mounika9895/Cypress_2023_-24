@@ -1,5 +1,5 @@
 describe('Fill and Submit Form Multiple Times', () => {
-  it("Should be able to submit a successful submission via contact us form", () => {
+  it.only("Should be able to submit a successful submission via contact us form", () => {
   cy.visit('https://student.infinitylearn.com/');
   cy.get('.UNFAPP-phncuntry-drpdwn.ng-pristine .UNFAPP-phncuntry-fldgrp').type('6361415008');
   cy.get('.UNFAPP-txt-link.ng-star-inserted').click();
@@ -19,7 +19,7 @@ describe('Fill and Submit Form Multiple Times', () => {
     
   
   for (let i = 0; i < 500; i++) {
-      it.only(`should fill and submit form - iteration ${i + 1}`, () => {
+      it(`should fill and submit form - iteration ${i + 1}`, () => {
        
        cy.get(':nth-child(1) > :nth-child(2) > .form-group > .form-control').clear()
          .type('Mounika');
