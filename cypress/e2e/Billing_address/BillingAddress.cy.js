@@ -11,7 +11,6 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.wait(2000)
   cy.get('.SUBCRP-blue-btn.full').should('contain.text', 'Buy Now')
   .first().click();
-  cy.wait(2000)
   //cy.get('.SUBCRP-blue-btn').should('have.length', 6).last().click();
   cy.get('.SUBCRP-package-detail-btn-row').click();
 
