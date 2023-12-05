@@ -1,3 +1,5 @@
+const { first } = require("cypress/types/lodash");
+
 describe('Fill and Submit Form Multiple Times', () => {
   it.only("Should be able to submit a successful submission via contact us form", () => {
   cy.visit('https://student.infinitylearn.com/');
@@ -10,7 +12,7 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('.SUBCRP-blue-btn.full').should('contain.text', 'Buy Now')
   .first().click();
   cy.wait(2000)
-  cy.get('.SUBCRP-blue-btn').should('contain.text', 'Proceed').click();
+  cy.get('.SUBCRP-blue-btn').should('contain.text', 'Proceed').first().click();
 
 
   // cy.get(':nth-child(1) > .SUBCRP-list-box > .SUBCRP-package-detail-row > .SUBCRP-package-detail-btn-row > .SUBCRP-blue-btn').click();
