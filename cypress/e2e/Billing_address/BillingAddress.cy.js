@@ -1,4 +1,4 @@
-const { first } = require("cypress/types/lodash");
+/// <reference types="cypress" />
 
 describe('Fill and Submit Form Multiple Times', () => {
   it.only("Should be able to submit a successful submission via contact us form", () => {
