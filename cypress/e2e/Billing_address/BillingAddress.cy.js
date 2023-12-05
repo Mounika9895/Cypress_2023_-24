@@ -7,11 +7,8 @@ describe('Fill and Submit Form Multiple Times', () => {
   cy.get('button[type="button"]').click();
   cy.get(':nth-child(4) > :nth-child(4) > a > span').click();
   cy.wait(2000)
-  cy.get('li.ng-star-inserted')
-  .eq(1)
-  .find('a.doubts-icon')
-  .click();
-
+  cy.get('button.SUBCRP-blue-btn.full:first-of-type').click();
+  cy.wait(2000)
   cy.get(':nth-child(1) > .SUBCRP-list-box > .SUBCRP-package-detail-row > .SUBCRP-package-detail-btn-row > .SUBCRP-blue-btn').click();
   cy.get('.payment-btn').click();
   cy.get('.SUBCRP-cart-edit-icon-btn > img').click();
