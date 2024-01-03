@@ -14,3 +14,4 @@ describe("Test Contact Us form via Automation Test Store", () => {
         console.log("Test has completed!");
     });
 })
+
